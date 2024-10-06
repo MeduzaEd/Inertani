@@ -267,11 +267,18 @@ body, html {
 /* Адаптивные стили для телефонов (max-width: 576px) */
 @media (max-width: 576px) {
     .main-nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px;
+        transition: transform 0.3s ease; /* Плавный переход для скрытия/показа */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
     }
-
+    
+    .hide {
+        transform: translateY(-100%); /* Скрывает навигацию вверх */
+    }
+    
     .nav-links {
         flex-direction: column;
         gap: 10px;
