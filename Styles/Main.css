@@ -264,9 +264,8 @@ body, html {
     transform: translateY(-3px);
 }
 
-/* Адаптивные стили */
-@media (max-width: 768px) {
-    /* Главное меню */
+/* Адаптивные стили для телефонов (max-width: 576px) */
+@media (max-width: 576px) {
     .main-nav {
         flex-direction: column;
         align-items: flex-start;
@@ -279,47 +278,13 @@ body, html {
         margin: 0;
     }
 
-    .nav-links a {
-        padding: 10px 0;
-    }
-
-    .logo {
-        font-size: 1.8rem;
-    }
-
-    /* Секция приветствия */
     .welcome-section h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
-    /* Анимация */
-    .animated-box {
-        width: 70px;
-        height: 70px;
-        top: 60%;
-    }
-
-    .animated-circle {
-        width: 60px;
-        height: 60px;
-        top: 70%;
-    }
-
-    /* Секция контента */
-    .section-content {
-        padding: 60px 15px;
-        margin: 30px 15px;
-    }
-
-    /* Видео */
-    .background-video {
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    /* Секция загрузки */
+    .section-content,
     .download-section {
-        padding: 30px 15px;
+        padding: 20px;
     }
 
     .download-buttons {
@@ -327,17 +292,84 @@ body, html {
         gap: 10px;
     }
 
-    /* Секция галереи */
-    .gallery {
+    .gallery-item {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+/* Адаптивные стили для планшетов (max-width: 768px) */
+@media (max-width: 768px) {
+    .welcome-section h1 {
+        font-size: 3rem;
+    }
+
+    .download-buttons {
+        flex-direction: column;
         gap: 15px;
     }
 
     .gallery-item {
-        width: calc(100% - 30px);
+        width: calc(50% - 20px);
+    }
+}
+
+/* Адаптивные стили для ПК и больших экранов (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .main-nav {
+        padding: 20px 40px;
     }
 
-    /* Кнопка прокрутки */
-    .scroll-to-download {
-        width: 100%;
+    .welcome-section h1 {
+        font-size: 4.5rem;
+    }
+
+    .section-content {
+        max-width: 1400px;
+    }
+
+    .gallery-item {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+/* Адаптивные стили для телевизоров (min-width: 1920px) */
+@media (min-width: 1920px) {
+    .main-nav {
+        padding: 30px 60px;
+    }
+
+    .welcome-section h1 {
+        font-size: 5.5rem;
+    }
+
+    .section-content {
+        max-width: 1800px;
+    }
+
+    .gallery-item {
+        width: 400px;
+        height: 300px;
+    }
+
+    .download-btn {
+        padding: 20px 40px;
+    }
+}
+
+/* Адаптивные стили для консолей (ориентировочно max-width: 1280px) */
+@media (max-width: 1280px) {
+    .main-nav {
+        padding: 20px 30px;
+    }
+
+    .section-content,
+    .download-section {
+        padding: 40px 30px;
+    }
+
+    .gallery-item {
+        width: calc(33.33% - 20px);
     }
 }
