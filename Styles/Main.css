@@ -296,6 +296,16 @@ body, html {
         width: 100%;
         height: 100px;
     }
+    .animated-box
+    {
+        width: 25px;
+        height: 25px;
+    }
+    .animated-circle
+    {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 /* Адаптивные стили для планшетов (max-width: 768px) */
@@ -310,7 +320,17 @@ body, html {
     }
 
     .gallery-item {
-        width: calc(50% - 20px);
+        width: calc(40% - 20px);
+    }
+    .animated-box
+    {
+        width: 45px;
+        height: 45px;
+    }
+    .animated-circle
+    {
+        width: 45px;
+        height: 45px;
     }
 }
 
@@ -332,6 +352,16 @@ body, html {
         width: 300px;
         height: 200px;
     }
+    .animated-box
+    {
+        width: 85px;
+        height: 85px;
+    }
+    .animated-circle
+    {
+        width: 85px;
+        height: 85px;
+    }
 }
 
 /* Адаптивные стили для телевизоров (min-width: 1920px) */
@@ -347,9 +377,18 @@ body, html {
     .section-content {
         max-width: 1800px;
     }
-
+    .animated-box
+    {
+        width: 95px;
+        height: 95px;
+    }
+    .animated-circle
+    {
+        width: 95px;
+        height: 95px;
+    }
     .gallery-item {
-        width: 400px;
+        width: 300px;
         height: 300px;
     }
 
@@ -371,5 +410,15 @@ body, html {
 
     .gallery-item {
         width: calc(33.33% - 20px);
+    }
+    .animated-box
+    {
+        width: 65px;
+        height: 65px;
+    }
+    .animated-circle
+    {
+        width: 65px;
+        height: 65px;
     }
 }
