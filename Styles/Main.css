@@ -165,7 +165,6 @@ body, html {
     margin-top: 40px;
 }
 
-/* Анимация (продолжение) */
 .animated-box {
     width: 100px;
     height: 100px;
@@ -263,4 +262,82 @@ body, html {
 .scroll-to-download:hover {
     background-color: #ffb400;
     transform: translateY(-3px);
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    /* Главное меню */
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    /* Секция приветствия */
+    .welcome-section h1 {
+        font-size: 3rem;
+    }
+
+    /* Анимация */
+    .animated-box {
+        width: 70px;
+        height: 70px;
+        top: 60%;
+    }
+
+    .animated-circle {
+        width: 60px;
+        height: 60px;
+        top: 70%;
+    }
+
+    /* Секция контента */
+    .section-content {
+        padding: 60px 15px;
+        margin: 30px 15px;
+    }
+
+    /* Видео */
+    .background-video {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    /* Секция загрузки */
+    .download-section {
+        padding: 30px 15px;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Секция галереи */
+    .gallery {
+        gap: 15px;
+    }
+
+    .gallery-item {
+        width: calc(100% - 30px);
+    }
+
+    /* Кнопка прокрутки */
+    .scroll-to-download {
+        width: 100%;
+    }
 }
