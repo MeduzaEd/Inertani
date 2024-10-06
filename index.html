@@ -16,12 +16,12 @@
     <nav class="main-nav">
         <div class="logo">Inertani RPG</div>
         <ul class="nav-links">
-            <li><a href="#home">Главная</a></li>
-            <li><a href="#features">Особенности</a></li>
-            <li><a href="#gallery">Галерея</a></li>
-            <li><a href="#video">Видео</a></li>
-            <li><a href="#download">Скачать</a></li>
-            <li><a href="#contact">Контакты</a></li>
+            <li><a class="LinkButton" href="#home">Главная</a></li>
+            <li><a class="LinkButton" href="#features">Особенности</a></li>
+            <li><a class="LinkButton" href="#gallery">Галерея</a></li>
+            <li><a class="LinkButton" href="#video">Видео</a></li>
+            <li><a class="LinkButton" href="#download">Скачать</a></li>
+            <li><a class="LinkButton" href="#contact">Контакты</a></li>
         </ul>
         <ul class="nav-links"></ul>
     </nav>
@@ -56,21 +56,29 @@
     <section id="gallery" class="section-content">
         <h2>Галерея</h2>
         <div class="gallery">
-            <div class="gallery-item">Изображение 1</div>
-            <div class="gallery-item">Изображение 2</div>
-            <div class="gallery-item">Изображение 3</div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://img.goodfon.ru/original/1024x1024/1/c4/fate-stay-night-art-seiber-arturiia-devushka-anime.jpg" alt="Изображение 1">
+   
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://example.com/image2.jpg" alt="Изображение 2">
+          
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://example.com/image3.jpg" alt="Изображение 3">
+      
+            </div>
         </div>
     </section>
+
 
     <!-- Секция видео -->
     <section id="video" class="section-content">
         <h2>Видео о игре</h2>
-        <video class="background-video" autoplay loop muted>
-            <source src="https://www.example.com/sample-video.mp4" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-        </video>
+        <iframe width="720" height="480" src="https://www.youtube.com/embed/jyf4Bzw5CJw?si=wY6N-bBMI8dtTpvP" frameborder="1" allowfullscreen></iframe>
         <p>Посмотрите наше интро к игре!</p>
     </section>
+
 
     <!-- Секция загрузки -->
     <section id="download" class="section-content download-section">
