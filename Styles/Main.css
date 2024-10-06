@@ -288,6 +288,18 @@ body, html {
     background-color: #ffb400;
     transform: translateY(-3px);
 }
+/* Стили для видео */
+.video-content {
+    width: 100%; /* Автоматическая ширина */
+    height: 480px; /* Фиксированная высота */
+    max-width: 720px; /* Занимает максимум 100% ширины родителя */
+    border-radius: 15px; /* Округлые углы */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    margin: 20px auto; /* Центрирование по горизонтали */
+    object-fit: cover; /* Изменяет размер видео, чтобы оно соответствовало контейнеру */
+}
+
+
 
 /* Адаптивные стили для телефонов (max-width: 576px) */
 @media (max-width: 576px) {
@@ -315,7 +327,7 @@ body, html {
     }
 
     .section-content {
-        max-width: 500px;
+        max-width: 290px;
     }
     .download-section {
         padding: 20px;
@@ -340,7 +352,10 @@ body, html {
         width: 25px;
         height: 25px;
     }
-
+    .video-content {
+        height: 260px; /* Фиксированная высота */
+        max-width: 360px; /* Занимает максимум 100% ширины родителя */
+    }
 }
 
 /* Адаптивные стили для планшетов (max-width: 768px) */
@@ -368,9 +383,13 @@ body, html {
         height: 45px;
     }
     .section-content {
-        max-width: 700px;
+        max-width: 500px;
     }
 
+    .video-content {
+        height: 360px; /* Фиксированная высота */
+        max-width: 540px; /* Занимает максимум 100% ширины родителя */
+    }
 }
 
 /* Адаптивные стили для ПК и больших экранов (min-width: 1024px) */
@@ -384,7 +403,7 @@ body, html {
     }
 
     .section-content {
-        max-width: 1000px;
+        max-width: 900px;
     }
 
     .gallery-item {
@@ -401,8 +420,41 @@ body, html {
         width: 85px;
         height: 85px;
     }
+    .video-content {
+        height: 480px; /* Фиксированная высота */
+        max-width: 720px; /* Занимает максимум 100% ширины родителя */
+    }
 }
 
+/* Адаптивные стили для консолей (ориентировочно max-width: 1280px) */
+@media (max-width: 1280px) {
+    .main-nav {
+        padding: 20px 30px;
+    }
+
+    .section-content,
+    .download-section {
+        padding: 40px 30px;
+    }
+
+    .gallery-item {
+        width: calc(33.33% - 20px);
+    }
+    .animated-box
+    {
+        width: 65px;
+        height: 65px;
+    }
+    .animated-circle
+    {
+        width: 65px;
+        height: 65px;
+    }
+    .video-content {
+        height: 480px; /* Фиксированная высота */
+        max-width: 720px; /* Занимает максимум 100% ширины родителя */
+    }
+}
 /* Адаптивные стили для телевизоров (min-width: 1920px) */
 @media (min-width: 1920px) {
     .main-nav {
@@ -434,30 +486,8 @@ body, html {
     .download-btn {
         padding: 20px 40px;
     }
-}
-
-/* Адаптивные стили для консолей (ориентировочно max-width: 1280px) */
-@media (max-width: 1280px) {
-    .main-nav {
-        padding: 20px 30px;
-    }
-
-    .section-content,
-    .download-section {
-        padding: 40px 30px;
-    }
-
-    .gallery-item {
-        width: calc(33.33% - 20px);
-    }
-    .animated-box
-    {
-        width: 65px;
-        height: 65px;
-    }
-    .animated-circle
-    {
-        width: 65px;
-        height: 65px;
+    .video-content {
+        height: 480px; /* Фиксированная высота */
+        max-width: 720px; /* Занимает максимум 100% ширины родителя */
     }
 }
